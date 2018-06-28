@@ -1,5 +1,6 @@
 .home {
   opacity: 0;
+  height: calc(100vh - #{$navbar-height});
   background-size: cover;
   background-repeat: no-repeat;
 
