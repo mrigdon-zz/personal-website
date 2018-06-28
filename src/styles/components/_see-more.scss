@@ -1,6 +1,13 @@
+@keyframes upDown {
+  from { transform: translateY(0); }
+  to { transform: translateY(0.3em); }
+}
+
 .see-more {
+  animation: upDown 0.5s ease-in-out 0s infinite alternate;
   border-radius: 50%;
   text-align: center;
+  cursor: pointer;
 
   $gray: 184;
   background-color: rgba($gray, $gray, $gray, 0.85);
@@ -9,6 +16,11 @@
   width: $container-width;
   height: $container-width;
   line-height: $container-width + ((1/10) * $container-width);
+
+  &:hover {
+    $darker-gray: $gray - 30;
+    background-color: rgba($darker-gray, $darker-gray, $darker-gray, 0.85);
+  }
 
   &__arrow {
     display: inline-block;
