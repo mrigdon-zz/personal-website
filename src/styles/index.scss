@@ -5,22 +5,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../images/sanfran-l.jpg);
-}
 
-@media (max-width: 918px) {
-  body {
+  @media (max-width: 918px) {
     background-image: url(../images/sanfran-m.jpg);
   }
-}
 
-@media (max-width: 670px) {
-  body {
+  @media (max-width: 670px) {
     background-image: url(../images/sanfran-s.jpg);
   }
-}
 
-@media (max-width: 420px) {
-  body {
+  @media (max-width: 420px) {
     background-image: url(../images/sanfran-xs.jpg);
   }
 }
+
+@import 'components/navbar';

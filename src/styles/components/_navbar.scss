@@ -35,8 +35,8 @@
   line-height: 70px;
   text-decoration: none;
   color: black;
-}
 
-.navbar__link:hover {
-  background-color: rgba(245, 245, 245, 0.85);
+  &:hover {
+    background-color: rgba(245, 245, 245, 0.85);
+  }
 }
