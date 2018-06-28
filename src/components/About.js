@@ -15,7 +15,7 @@ export default function About() {
           <p>{bio}</p>
         </div>
 
-        <SeeMore />
+        <SeeMore className="align--div-center" />
       </div>
     </main>
   );
