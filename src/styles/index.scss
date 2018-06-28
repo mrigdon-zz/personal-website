@@ -7,21 +7,8 @@ body {
 }
 
 main {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.main-container {
-  position: fixed;
-  top: $navbar-height;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: 1em 0;
-  overflow: scroll;
+  min-height: calc(100vh - #{$navbar-height});
+  padding: 1em;
 }
 
 @import 'components/navbar';

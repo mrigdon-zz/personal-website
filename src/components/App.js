@@ -31,9 +31,7 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
         <Navbar activeRoute={this.state.route} onNavigate={this.onNavigate} />
-        <main>
-          {this.renderMain()}
-        </main>
+        {this.renderMain()}
       </React.Fragment>
     );
   }

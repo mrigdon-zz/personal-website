@@ -18,7 +18,7 @@ function Link({ active, route, onNavigate }) {
 
 export default function Navbar({ activeRoute, onNavigate }) {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <a
         href="javascript:void(0)"
         className="navbar__logo"
@@ -39,6 +39,6 @@ export default function Navbar({ activeRoute, onNavigate }) {
           onNavigate={onNavigate}
         />
       </div>
-    </div>
+    </nav>
   );
 }

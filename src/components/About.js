@@ -6,8 +6,8 @@ const imgWidth = 150;
 export default function About() {
 
   return (
-    <div className="about main-container">
+    <main className="about">
       <div className="me-img" />
-    </div>
+    </main>
   );
 }
