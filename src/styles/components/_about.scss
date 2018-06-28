@@ -13,6 +13,21 @@
       flex-grow: 1;
       text-align: center;
     }
+
+    &__see-more {
+      opacity: 0;
+
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes upDown { from { transform: translateY(0); } to { transform: translateY(0.3em); } }
+
+      animation-name: fadeIn, upDown;
+      animation-iteration-count: 1, infinite;
+      animation-duration: $animation-duration;
+      animation-timing-function: ease, ease-in-out;
+      animation-delay: $animation-duration, (2 * $animation-duration);
+      animation-direction: normal, alternate;
+      animation-fill-mode: forwards;
+    }
   }
 }
 

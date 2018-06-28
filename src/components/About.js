@@ -9,13 +9,15 @@ export default function About() {
     <main className="about">
       <div className="container about__page-1">
         <div className="about__page-1__bio">
-          <div className="me-img" />
-          <h1>Matt Rigdon</h1>
-          <h3 className="text--secondary">Software Developer at Salesforce</h3>
-          <p>{bio}</p>
+          <div className="me-img animate--fade-down-in" />
+          <h1 className="animate--fade-down-in">Matt Rigdon</h1>
+          <h3 className="text--secondary animate--fade-down-in">
+            Software Developer at Salesforce
+          </h3>
+          <p className="animate--fade-down-in">{bio}</p>
         </div>
 
-        <SeeMore className="align--div-center" />
+        <SeeMore className="align--div-center about__page-1__see-more" />
       </div>
     </main>
   );

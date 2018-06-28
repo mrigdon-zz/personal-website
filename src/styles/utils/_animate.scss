@@ -1,0 +1,15 @@
+.animate {
+  &--fade-down-in {
+    @keyframes fadeDownIn {
+      from {
+        opacity: 0.01;
+        transform: translateY(-3em);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    animation: fadeDownIn $animation-duration ease-in-out;
+  }
+}
