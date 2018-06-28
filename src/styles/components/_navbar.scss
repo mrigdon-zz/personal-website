@@ -1,23 +1,29 @@
+@import '../variables';
+
 .navbar {
+  z-index: 1;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgb(255, 255, 255);
   top: 0;
   left: 0;
   right: 0;
-  height: 70px;
-  line-height: 70px;
+  height: $navbar-height;
+  line-height: $navbar-height;
   padding: 0 25px;
 }
 
 .navbar__logo {
   display: inline-block;
   text-align: center;
-  line-height: 40px;
-  height: 40px;
-  width: 60px;
+
+  $height: (4/7) * $navbar-height;
+  line-height: $height;
+  height: $height;
+  width: (6/7) * $navbar-height;
+
   border: 3px solid black;
-  border-radius: 12px;
-  font-size: 1.5em;
+  border-radius: (6/35) * $navbar-height;
+  font-size: (12/35) * $navbar-height;
   text-decoration: none;
   color: black;
 }
@@ -32,11 +38,11 @@
   width: 100px;
   display: inline-block;
   height: 100%;
-  line-height: 70px;
+  line-height: $navbar-height;
   text-decoration: none;
   color: black;
 
-  &:hover {
-    background-color: rgba(245, 245, 245, 0.85);
+  &:hover, &--active {
+    background-color: $navbar-link-active;
   }
 }

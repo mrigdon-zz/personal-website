@@ -1,15 +1,43 @@
 import React from 'react';
 
-export default function Navbar() {
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function Link({ active, route, onNavigate }) {
+  return (
+    <a
+      href="javascript:void(0)"
+      className={`navbar__link ${active ? 'navbar__link--active' : ''}`}
+      onClick={() => onNavigate(route)}
+    >
+      {capitalize(route.slice(1))}
+    </a>
+  );
+}
+
+export default function Navbar({ activeRoute, onNavigate }) {
   return (
     <div className="navbar">
-      <a href="javascript:void(0)" className="navbar__logo">
+      <a
+        href="javascript:void(0)"
+        className="navbar__logo"
+        onClick={() => onNavigate('/')}
+      >
         MWD
       </a>
 
       <div className="navbar__links-container">
-        <a href="javascript:void(0)" className="navbar__link">About</a>
-        <a href="javascript:void(0)" className="navbar__link">Contact</a>
+        <Link
+          active={activeRoute === '/about'}
+          route="/about"
+          onNavigate={onNavigate}
+        />
+        <Link
+          active={activeRoute === '/contact'}
+          route="/contact"
+          onNavigate={onNavigate}
+        />
       </div>
     </div>
   );

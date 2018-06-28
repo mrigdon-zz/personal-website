@@ -1,0 +1,14 @@
+.about {
+  background-color: whitesmoke;
+}
+
+.me-img {
+  background-image: url(../images/me.png);
+  background-size: cover;
+  $width: 120px;
+  height: $width;
+  width: $width;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid gray;
+}

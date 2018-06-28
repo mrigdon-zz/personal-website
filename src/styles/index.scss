@@ -1,22 +1,29 @@
+@import 'variables';
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Fjalla One', sans-serif;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../images/sanfran-l.jpg);
+}
 
-  @media (max-width: 918px) {
-    background-image: url(../images/sanfran-m.jpg);
-  }
+main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
-  @media (max-width: 670px) {
-    background-image: url(../images/sanfran-s.jpg);
-  }
-
-  @media (max-width: 420px) {
-    background-image: url(../images/sanfran-xs.jpg);
-  }
+.main-container {
+  position: fixed;
+  top: $navbar-height;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1em 0;
+  overflow: scroll;
 }
 
 @import 'components/navbar';
+@import 'components/home';
+@import 'components/about';
