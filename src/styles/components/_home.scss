@@ -4,15 +4,15 @@
 
   background-image: url(../images/sanfran-l.jpg);
 
-  @media (max-width: 918px) {
+  @media (max-width: $bp-medium) {
     background-image: url(../images/sanfran-m.jpg);
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: $bp-small) {
     background-image: url(../images/sanfran-s.jpg);
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: $bp-x-small) {
     background-image: url(../images/sanfran-xs.jpg);
   }
 }

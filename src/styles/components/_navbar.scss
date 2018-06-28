@@ -1,13 +1,13 @@
-@import '../variables';
-
 .navbar {
-  z-index: 1;
+  box-sizing: border-box;
+  height: $navbar-height;
   background-color: rgb(255, 255, 255);
   width: 100%;
-  height: $navbar-height;
   line-height: $navbar-height;
   padding: 0 25px;
-  box-sizing: border-box;
+  @media (max-width: $bp-small) {
+    padding: 0 0 0 25px;
+  }
 }
 
 .navbar__logo {

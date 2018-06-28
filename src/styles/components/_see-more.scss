@@ -1,0 +1,27 @@
+.see-more {
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+
+  $gray: 184;
+  background-color: rgba($gray, $gray, $gray, 0.85);
+
+  $container-width: 60px;
+  width: $container-width;
+  height: $container-width;
+  line-height: $container-width + ((1/10) * $container-width);
+
+  &__arrow {
+    display: inline-block;
+    transform: rotate(45deg);
+
+    $width: 25%;
+    width: $width;
+    height: $width;
+
+    $border-width: (1/10) * $container-width;
+    border-width: 0 $border-width $border-width 0;
+    border-color: $about-background;
+    border-style: solid;
+  }
+}
