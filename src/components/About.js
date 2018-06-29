@@ -10,8 +10,10 @@ export default function About() {
       <div className="container about__page-1">
         <div className="about__page-1__bio">
           <div className="me-img animate--fade-down-in" />
-          <h1 className="animate--fade-down-in">Matt Rigdon</h1>
-          <h3 className="text--secondary animate--fade-down-in">
+          <h1 className="animate--fade-down-in align--text-center">
+            Matt Rigdon
+          </h1>
+          <h3 className="text--secondary animate--fade-down-in align--text-center">
             Software Developer at Salesforce
           </h3>
           <p className="animate--fade-down-in">{bio}</p>
