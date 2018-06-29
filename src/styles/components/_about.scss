@@ -27,6 +27,12 @@
       animation-fill-mode: forwards;
     }
   }
+
+  &__page-2 {
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 1em;
+  }
 }
 
 .me-img {
