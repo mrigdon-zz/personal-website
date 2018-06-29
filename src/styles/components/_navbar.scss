@@ -1,5 +1,7 @@
 .navbar {
   box-sizing: border-box;
+  border-bottom: 1px solid #d4dadf;
+  box-shadow: 0 1px 1px 0 rgba(116, 129, 141, 0.1);
   height: $navbar-height;
   background-color: rgb(255, 255, 255);
   width: 100%;
