@@ -24,7 +24,7 @@ export default function Navbar({ activeRoute, onNavigate }) {
         className="navbar__logo"
         onClick={() => onNavigate('/')}
       >
-        MWD
+        RWD
       </a>
 
       <div className="navbar__links-container">

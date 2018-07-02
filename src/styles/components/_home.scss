@@ -1,8 +1,12 @@
 .home {
+  position: relative;
   opacity: 0;
-  height: calc(100vh - #{$navbar-height});
   background-size: cover;
   background-repeat: no-repeat;
+
+  $home-height: calc(100vh - #{$navbar-height});
+  height: $home-height;
+  line-height: $home-height;
 
   background-image: url(../images/sanfran-l.jpg);
 
@@ -16,5 +20,15 @@
 
   @media (max-width: $bp-x-small) {
     background-image: url(../images/sanfran-xs.jpg);
+  }
+
+  &__logo {
+    position: absolute;
+
+    $logo-width: 270px;
+    $logo-pos: calc(50% - (#{$logo-width} / 2));
+    width: $logo-width;
+    top: $logo-pos;
+    left: $logo-pos;
   }
 }
