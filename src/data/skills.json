@@ -1,0 +1,58 @@
+{
+  "Professional Experience": [
+    {
+      "title": "Salesforce",
+      "summary": "Matt currently works at Salesforce on Team Trailhead as a full-stack web developer, contributing frontend and backend features and bug-fixes on a daily basis."
+    },
+    {
+      "title": "Fingerprint",
+      "summary": "Previously Matt worked as full-stack web developer at the kids' gaming company. He led the effort in incorporating React and Redux into the ecosystem."
+    },
+    {
+      "title": "Finesse",
+      "summary": "Initially contracted to build the iOS app for the fitness company, Matt was brought on afterwards as an equity stakeholder to lead further software efforts, including developing a Ruby on Rails backend and admin dashboard."
+    }
+  ],
+  "Frontend Skills": [
+    {
+      "title": "HTML5",
+      "summary": "As the skeleton of the webpage, web development starts with HTML. Matt takes the necessary time to ensure the layout is structurally and semantically correct."
+    },
+    {
+      "title": "CSS3",
+      "summary": "CSS is what gives webpages style -- it's what beautiful user interfaces are made of. Matt's passion for UI development has earned him expertice in this area."
+    },
+    {
+      "title": "React (Javascript)",
+      "summary": "React, a Javascript framework, is a powerful tool Matt uses at work and in personal projects to provide interactivity to webpages."
+    }
+  ],
+  "Backend Skills": [
+    {
+      "title": "Ruby on Rails",
+      "summary": "Rails provides an easy and powerful framework for building web servers. Matt currently develops in Rails at Salesforce, and previously at Fingerpint."
+    },
+    {
+      "title": "PostgreSQL",
+      "summary": "Postgres is one of the world leaders in database software. Matt uses it at Salesforce, previously at Fingerpint, and in all personal projects."
+    },
+    {
+      "title": "Heroku",
+      "summary": "Heroku is a web-host, that is, where the servers that host the website live. He uses it at Salesforce and developed Finesse's SomaSole app backend on it."
+    }
+  ],
+  "Education": [
+    {
+      "title": "University of Southern California",
+      "summary": "Matt earned a B.S. in computer science from USC."
+    },
+    {
+      "title": "Intel",
+      "summary": "Matt's first real world experience was a software engineering internship with Intel. He was rehired for a second summer internship after the first one."
+    },
+    {
+      "title": "Bitium",
+      "summary": "Matt's first exposure to web development was a web development internship at the Google-acquired tech startup."
+    }
+  ]
+}
